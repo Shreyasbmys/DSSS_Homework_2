@@ -1,9 +1,9 @@
 import random
 
 
-def function_range(min, max):
+def number_limit(min, max):
     """
-    Selects random integer and return its min and max.
+    Selects random integer and return a number between this range
     """
     return random.randint(min, max)
 
@@ -28,7 +28,7 @@ def math_quiz_Ex2():
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for i in range(totalQues):
-        n1 = function_range(1, 10); n2 = function_range(1, 6); o = function_ops()
+        n1 = number_limit(1, 10); n2 = number_limit(1, 6); o = function_ops()
 
         PROBLEM, ANSWER = function_equations(n1, n2, o)
         print(f"\nQuestion: {PROBLEM}")
